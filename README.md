@@ -6,12 +6,12 @@
 
 ## 技术栈
 
-- **前端框架**: React 18
-- **构建工具**: Webpack 5
-- **UI组件库**: Ant Design 5
-- **图表库**: ECharts (echarts-for-react)
-- **路由**: React Router 6
-- **开发语言**: JavaScript (JSX)
+- **前端框架**: Vue 3
+- **构建工具**: Vite 5
+- **UI组件库**: Ant Design Vue 4
+- **图表库**: ECharts 5
+- **路由**: Vue Router 4
+- **开发语言**: JavaScript
 
 ## 功能模块
 
@@ -66,10 +66,10 @@ npm install
 ### 启动开发服务器
 
 ```bash
-npm start
+npm run dev
 ```
 
-访问 http://localhost:12000 查看应用
+访问 http://localhost:3000 查看应用
 
 ### 构建生产版本
 
@@ -77,13 +77,18 @@ npm start
 npm run build
 ```
 
+### 预览生产构建
+
+```bash
+npm run preview
+```
+
 ## 项目结构
 
 ```
 src/
-├── components/     # 通用组件
 ├── layouts/        # 布局组件
-│   └── MainLayout.jsx
+│   └── MainLayout.vue
 ├── pages/          # 页面组件
 │   ├── Dashboard/      # 领导驾驶舱
 │   ├── Archives/       # 基础档案管理
@@ -92,11 +97,11 @@ src/
 │   ├── Complaints/     # 投诉执法
 │   ├── Safety/         # 安全监管
 │   └── Settings/       # 系统设置
+├── router/         # 路由配置
 ├── mock/           # 模拟数据
 ├── styles/         # 全局样式
-├── utils/          # 工具函数
-├── App.jsx         # 应用入口
-└── index.js        # 渲染入口
+├── App.vue         # 应用入口
+└── main.js         # 渲染入口
 ```
 
 ## 许可证

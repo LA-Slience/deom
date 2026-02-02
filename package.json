@@ -2,11 +2,11 @@
   "name": "ev-charging-admin",
   "version": "1.0.0",
   "description": "电动车公共充电设施监管平台后台管理系统",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -20,25 +20,14 @@
   },
   "homepage": "https://github.com/LA-Slience/deom#readme",
   "dependencies": {
-    "@ant-design/icons": "^6.1.0",
-    "antd": "^6.2.2",
-    "echarts": "^6.0.0",
-    "echarts-for-react": "^3.0.6",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-router-dom": "^7.13.0"
+    "@ant-design/icons-vue": "^7.0.1",
+    "ant-design-vue": "^4.2.1",
+    "echarts": "^5.5.0",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.28.6",
-    "@babel/preset-env": "^7.28.6",
-    "@babel/preset-react": "^7.28.5",
-    "babel-loader": "^10.0.0",
-    "css-loader": "^7.1.3",
-    "html-webpack-plugin": "^5.6.6",
-    "mini-css-extract-plugin": "^2.10.0",
-    "style-loader": "^4.0.0",
-    "webpack": "^5.104.1",
-    "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.3"
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.6"
   }
 }
